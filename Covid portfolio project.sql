@@ -11,7 +11,7 @@ Where continent is not null
 order by 3,4
 
 
--- Select Data that we are going to be starting with
+-- Select Data , starting with
 
 Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject..CovidDeaths
@@ -158,5 +158,3 @@ Join PortfolioProject..CovidVaccinations vac
 	and dea.date = vac.date
 where dea.continent is not null 
 
-Select *
-from  PercentPopulationVaccinated
